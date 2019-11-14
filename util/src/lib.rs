@@ -39,4 +39,4 @@ pub use grin_store;
 pub use grin_util;
 
 pub use logger::init_logger;
-pub use types::LoggingConfig;
+pub use types::{LogLevel, LoggingConfig};

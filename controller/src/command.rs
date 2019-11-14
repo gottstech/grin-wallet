@@ -1030,7 +1030,7 @@ pub fn proof(
 	Ok(())
 }
 
-/// Proof
+/// Address
 pub fn address(
 	wallet: Arc<Mutex<WalletInst<impl NodeClient + 'static, keychain::ExtKeychain>>>,
 	grinrelay_config: GrinRelayConfig,
