@@ -46,7 +46,7 @@ pub const GRIN_WALLET_DIR: &'static str = "wallet_data";
 /// API secret
 pub const API_SECRET_FILE_NAME: &'static str = ".api_secret";
 
-fn get_grin_path(chain_type: &global::ChainTypes) -> Result<PathBuf, ConfigError> {
+pub fn get_grin_path(chain_type: &global::ChainTypes) -> Result<PathBuf, ConfigError> {
 	// Check if grin dir exists
 	let mut grin_path = match dirs::home_dir() {
 		Some(p) => p,
