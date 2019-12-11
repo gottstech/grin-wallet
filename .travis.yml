@@ -65,7 +65,11 @@ matrix:
   - os: osx
     env: CI_JOB="release"     CI_JOB_ARGS=
   - os: windows
-    env: CI_JOB="test"        CI_JOB_ARGS="config libwallet api"
+    env: CI_JOB="test"        CI_JOB_ARGS="config"
+  - os: windows
+    env: CI_JOB="test"        CI_JOB_ARGS="libwallet"
+# - os: windows
+#   env: CI_JOB="test"        CI_JOB_ARGS="api"
   - os: windows
     env: CI_JOB="test"        CI_JOB_ARGS="impls"
   - os: windows
